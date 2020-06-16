@@ -79,7 +79,7 @@ public class WatchMethodVisitor extends MethodVisitor {
 
     @Override
     public void visitVarInsn(int opcode, int var) {
-        System.out.println(opcode + " " + var);
+//        System.out.println(opcode + " " + var);
         lastSlot = var;
         super.visitVarInsn(opcode, var);
     }
