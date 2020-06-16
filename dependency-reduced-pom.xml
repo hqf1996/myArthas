@@ -41,7 +41,7 @@
                 <transformers>
                   <transformer>
                     <manifestEntries>
-                      <Agent-Class>agent.IAgentMainTimeTunnel</Agent-Class>
+                      <Agent-Class>agent.IAgentMainRedefine</Agent-Class>
                     </manifestEntries>
                   </transformer>
                 </transformers>
@@ -73,7 +73,7 @@
               <transformers>
                 <transformer>
                   <manifestEntries>
-                    <Agent-Class>agent.IAgentMainTimeTunnel</Agent-Class>
+                    <Agent-Class>agent.IAgentMainRedefine</Agent-Class>
                     <Can-Retransform-Classes>true</Can-Retransform-Classes>
                     <Can-Redefine-Classes>true</Can-Redefine-Classes>
                   </manifestEntries>

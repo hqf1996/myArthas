@@ -18,8 +18,8 @@ public class IAgentMainRedefine {
             throws UnmodifiableClassException, ClassNotFoundException {
         String path = agentArgs;
         String classPath = ParseClassPathForPath(path);
-        System.out.println("path " + path);
-        System.out.println("classPath " + classPath);
+//        System.out.println("path " + path);
+//        System.out.println("classPath " + classPath);
         inst.addTransformer(new RedefineTransformer(path, classPath), true);
         /**
          * 这段代码的意思是，重新转换目标类，也就是 Main 类。也就是说，你需要重新定义哪个类，需要指定，否则 JVM 不可能知道。
@@ -32,7 +32,7 @@ public class IAgentMainRedefine {
         byte[] bytesFromFile = ReadByte.getBytesFromFile(path);
         ClassReader cr = new ClassReader(bytesFromFile);
         String classPath = cr.getClassName().replace("/", ".");
-        System.out.println("classPath " + classPath);
+//        System.out.println("classPath " + classPath);
         return classPath;
     }
 }
